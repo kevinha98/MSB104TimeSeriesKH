@@ -19,3 +19,5 @@ hello <- function(name=NULL) {
 }
 hello("mister")
 hello("Ape")
+MSB104TimeSeriesKH::hello()
+library(MSB104TimeSeriesKH)

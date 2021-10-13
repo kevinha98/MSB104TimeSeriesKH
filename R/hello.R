@@ -13,11 +13,10 @@
 #   Check Package:             'Cmd + Shift + E'
 #   Test Package:              'Cmd + Shift + T'
 
+#' @export
 hello <- function(name=NULL) {
   tekst <- paste("Hello world! My name is", name)
   print(tekst)
 }
-hello("mister")
-hello("Ape")
-MSB104TimeSeriesKH::hello()
-library(MSB104TimeSeriesKH)
+hello("Kevin")
+

@@ -1,3 +1,3 @@
 ## code to prepare `DATASET` dataset goes here
-
-usethis::use_data(DATASET, overwrite = TRUE)
+hw_iris <- iris
+usethis::use_data(hw_iris, overwrite = TRUE)

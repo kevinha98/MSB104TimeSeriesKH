@@ -20,5 +20,5 @@ hello <- function(name=NULL) {
 }
 hello("Kevin")
 
-library(MSB104TimeSeriesKH)
-MSB104TimeSeriesKH::hello("Kevin")
+
+

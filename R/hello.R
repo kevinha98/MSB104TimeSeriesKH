@@ -14,7 +14,8 @@
 #   Test Package:              'Cmd + Shift + T'
 
 hello <- function(name=NULL) {
-  tekst <- paste("Hello world! My name is Kevin", name)
+  tekst <- paste("Hello world! My name is", name)
   print(tekst)
 }
-hello()
+hello("mister")
+hello("Ape")

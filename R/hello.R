@@ -20,5 +20,8 @@ hello <- function(name=NULL) {
 }
 hello("Kevin")
 
-
+plot19ts <- function(sel_cou=NULL,covid19df=NULL, yvar='hosp'){c_cdf <- sel_cou %>% purr::map(function(x,df=covid_sel_df){ print(x)
+  out <- df %>% dplyr::filter(id==x)
+  print(out)
+  gout <- ggplot(out, aes(x=dayofyear(),y=hosp, color=year)) + geom_point() + geom_line() + labs(title=x,"})}
 

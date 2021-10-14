@@ -1,0 +1,27 @@
+---
+title: "Covid 19 analysis"
+author: "Kevin Ha"
+output: html_document
+---
+
+**Covid 19 plot functions**
+
+```{r eval=FALSE, include=TRUE}
+#' @importFrom magrittr %>%
+#' @export
+plot19ts <- function(sel_cou=NULL,covid19df=NULL, yvar='hosp'){
+	
+	c_cdf <- sel_cou %>% purrr::map(function(x,df_c=covid19df){
+		out <- df_c %>% dplyr::filter(id==x)
+		gout <- ggplot(out, aes(x=dayofyear,y=hosp, color=year)) + 
+			geom_point() + 
+			geom_line() + 
+			labs(title=x,"Day during the year", y="Hospitlalized")
+	})
+}
+```
+
+```{r}
+MSB104TimeSeriesKH::hello(name="Kevin")
+```
+
